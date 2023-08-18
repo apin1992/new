@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Sarpanch:wght@400;700;900&display=swap" rel="stylesheet">
+
+   <title>New Portfolio</title>
+
+   <style>
+
+    body{
+      text-align: center;
+      color:black;
+      font-family: 'Orbitron', monospace, sans-serif;
+      letter-spacing: 1.5px;
+    }
+    header {
+      background-color: black;
+      font-size: 1.1rem;
+      margin-top:-8px;;
+      width: 100%;
+      padding: 2px;
+      color: white;
+    }
+    img {
+      width:550px;
+      height: 450px;
+      margin-left: 30px;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    p {
+      font-size: 2rem;
+     background-color: black;
+      margin-left: 80px;
+    }
+    p:hover {
+    font-weight: bold;
+    cursor: pointer;
+    }
+    section{
+      display: inline-flex;
+      justify-content: sp;
+      background-color:black;
+      margin-top: 50px;
+    }
+    article{
+      padding: 80px;
+      padding-top: 150px;
+      display: inline-flex;
+      flex-direction: column;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header><h1>Martin - Web Developer</h1></header>
+
+  <section> 
+    <!-- comment css --> 
+    <article>
+      <a href="portfolio/index.html" target=_blank> <p id="pOne">Projects</p></a>    
+      <a href="aboutme.html" target=_blank> <p id="pTwo">About Me</p></a>
+      <a href="certifications.html" target=_blank>   <p id="pThree">Certifications</p></a>
+      <a href="/portfolio/contact.html" target="_blank"> <p id="pFour">Contact</p></a>
+    </article>
+
+    <article>
+       <img id="imageOne" src="images/main2.jpg">
+       <!--
+ 
+       <img id="imageTwo" src="images/amazingspace.png">
+
+       <img id="imageThree" src="images/amazonclone.png">
+
+      
+         <img id="imageFour" src="images/bootstrap.png"> 
+       -->
+      </article>
+
+  </section>
+
+  <script>
+
+    // first image
+    const imageOne = document.getElementById('imageOne');
+    const paragraphOne = document.getElementById('pOne');
+    
+    paragraphOne.addEventListener('mouseover', function() {
+      imageOne.src = 'images/projects.png';
+    });
+    
+    paragraphOne.addEventListener('mouseout', function() {
+      imageOne.src = 'images/main2.jpg';
+    });
+   // second image
+    const imageTwo = document.getElementById('imageTwo');
+    const paragraphTwo = document.getElementById('pTwo');
+    
+    paragraphTwo.addEventListener('mouseover', function() {
+      imageOne.src = 'images/paramedic.jpg';
+    });
+    
+    paragraphTwo.addEventListener('mouseout', function() {
+      imageOne.src = 'images/main2.jpg';
+    });
+   // third image
+    const imageThree = document.getElementById('imageThree');
+    const paragraphThree = document.getElementById('pThree');
+    
+    paragraphThree.addEventListener('mouseover', function() {
+      imageOne.src = 'images/bootstrap.png';
+    });
+    
+    paragraphThree.addEventListener('mouseout', function() {
+      imageOne.src = 'images/main2.jpg';
+    });
+    // Fourth image
+    const imageFour = document.getElementById('imageFour');
+    const paragraphFour = document.getElementById('pFour');
+    
+    paragraphFour.addEventListener('mouseover', function() {
+      imageOne.src = 'images/contact.jpg';
+    });
+    
+    paragraphFour.addEventListener('mouseout', function() {
+      imageOne.src = 'images/main2.jpg';
+    });
+
+  </script>
+
+</body>
+
+</html>
